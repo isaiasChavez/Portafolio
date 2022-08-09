@@ -10,7 +10,7 @@ const Skills = () => {
           <h2 className='text-center text-2xl mb-8 md:mb-0'>Skills</h2>
           <span className='flex items-center '>
             ----
-            <FontAwesomeIcon className='mx-4' className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faCogs} />
+            <FontAwesomeIcon className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faCogs} />
             ----
           </span>
         </div>

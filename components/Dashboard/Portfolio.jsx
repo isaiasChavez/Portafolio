@@ -10,7 +10,7 @@ const Portfolio = () => {
           <h2 className='text-center text-2xl mb-8 md:mb-0'>my portfolio</h2>
           <span className='flex items-center '>
             ----
-            <FontAwesomeIcon className='mx-4' className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faBriefcase} />
+            <FontAwesomeIcon className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faBriefcase} />
             ----
           </span>
         </div>
@@ -40,7 +40,7 @@ const Card = ({urlImage,url}) => {
 
     <div className=' bg-white w-5/12 md:w-4/12 xl:w-3/12 m-1 mb-3 md:mb-0 md:m-10  flex justify-center items-center'>
       <Flip>
-        <a href={url} target="_blank">
+        <a href={url} rel="noreferrer" target="_blank">
           
       <img src={ urlImage}/>
 </a>

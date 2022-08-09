@@ -18,7 +18,6 @@ export default function Services () {
         <span className='flex items-center '>
           ----
           <FontAwesomeIcon
-            className='mx-4'
             className='w-8 h-8 text-secondary text-2xl mx-4'
             icon={faServer}
           />
@@ -43,7 +42,6 @@ const Card = ({ icono, title,description }) => {
           <div className='h-1/6 text-center mb-4'>
             {' '}
             <FontAwesomeIcon
-              className='text-secondary mx-4'
               className='w-8 h-8 text-secondary text-2xl mx-4'
               icon={icono}
             />{' '}
