@@ -1,0 +1,14 @@
+.card{
+    max-width: 40vw;
+    width: 100%;
+    min-width: 320px;
+    margin: 1rem auto;
+    min-height: 20rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: translate(2px,-4px);
+    opacity: 0.8;
+}

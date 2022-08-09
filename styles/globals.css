@@ -1,26 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+:root{
 
-* {
-  box-sizing: border-box;
-}
+    --text-secondary:#fa9b1b;
+    --text-white: #e5e5e5;
+    --black:#161616;
+    --bg-secondary:#292929;
+    --darked900:#292929;
+    font-family: 'Roboto', sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

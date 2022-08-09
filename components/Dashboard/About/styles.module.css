@@ -1,0 +1,9 @@
+.titleContainer{
+}
+.aboutContainer{
+    height: 100%;
+}
+.profilePicture{
+    filter: grayscale(2);
+    border-radius: 6px;
+}
