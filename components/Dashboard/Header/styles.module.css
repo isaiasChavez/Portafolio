@@ -1,7 +1,8 @@
 .header{
     background-image: url('/assets/img/banner.jpg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     filter: opacity(0.9);
     background-attachment: fixed;

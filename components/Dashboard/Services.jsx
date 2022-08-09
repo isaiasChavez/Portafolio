@@ -23,7 +23,7 @@ export default function Services () {
           ----
         </span>
       </div>
-      <div className='h-5/6 w-full flex justify-around flex-wrap'>
+      <div className='h-5/6 w-full flex justify-around flex-wrap mt-8'>
         <Card icono={faPen} title='FrontEnd' description="layout and programming, specializing in react." />
         <Card icono={faFlag} title='Backend' description="Design, programming of business logic with nodejs and related technologies such as Nestjs"/>
         <Card icono={faCode} title='Aplicaciones móviles' description="with react native"/>

@@ -24,7 +24,7 @@ export default memo(function About() {
       </div>
 
       <div
-        className={` ${styles.aboutContainer} flex flex-wrap w-full  items-center`}
+        className={` ${styles.aboutContainer} flex flex-wrap w-full  items-center mt-8 md:mt-4`}
       >
         <div
           className=" w-full md:w-5/12 overflow-hidden flex  justify-center items-center  "
@@ -40,7 +40,7 @@ export default memo(function About() {
             height={400}
           />
         </div>
-        <div className="  md:mt-0 w-full px-5 md:w-7/12 md:px-2 ">
+        <div className="  md:mt-0 w-full px-5 md:w-7/12 md:px-2  mt-8 md:mt-4">
           <div>
             <h3 className="text-lg md:text-xl mb-4">
               Hello! I am Isaías Chávez
