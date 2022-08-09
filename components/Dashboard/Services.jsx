@@ -8,7 +8,6 @@ import {
   faInfo
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Fade from 'react-reveal/Fade'
 
 export default function Services () {
   return (
@@ -37,7 +36,6 @@ export default function Services () {
 const Card = ({ icono, title,description }) => {
   return (
     <div className='h-full  w-full md:w-6/12 md:h-3/6 p-5 flex justify-center items-center'>
-      <Fade>
         <div className=' flex w-full h-full flex-col items-center justify-center'>
           <div className='h-1/6 text-center mb-4'>
             {' '}
@@ -51,7 +49,6 @@ const Card = ({ icono, title,description }) => {
             <p className='text-xs uppercase '>{description}</p>
           </div>
         </div>
-      </Fade>
     </div>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import Flip from 'react-reveal/Flip';
 
 const Portfolio = () => {
   return (
@@ -39,12 +38,10 @@ const Card = ({urlImage,url}) => {
   return (
 
     <div className=' bg-white w-5/12 md:w-4/12 xl:w-3/12 m-1 mb-3 md:mb-0 md:m-10  flex justify-center items-center'>
-      <Flip>
         <a href={url} rel="noreferrer" target="_blank">
           
       <img src={ urlImage}/>
 </a>
-      </Flip>
     </div>
   )
 }
