@@ -5,7 +5,8 @@ import {
   faPen,
   faFlag,
   faCode,
-  faInfo
+  faInfo,
+  faG
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -24,10 +25,10 @@ export default function Services () {
         </span>
       </div>
       <div className='h-5/6 w-full flex justify-around flex-wrap mt-8'>
-        <Card icono={faPen} title='FrontEnd' description="layout and programming, specializing in react." />
-        <Card icono={faFlag} title='Backend' description="Design, programming of business logic with nodejs and related technologies such as Nestjs"/>
-        <Card icono={faCode} title='Aplicaciones móviles' description="with react native"/>
-        <Card icono={faInfo} title='Análisis de datos' />
+        <Card icono={faPen} title='FrontEnd' description={<>I architect and develop websites and <br /> applications using web technologies</>} />
+        <Card icono={faFlag} title='Backend' description={<>I can build and maintain the mechanisms that process <br/> data and perform actions on websites</>}/>
+        <Card icono={faCode} title='Mobile Apps' description={<>I can build apps for Google’s Android,<br/> Apple’s iOS with react native.</>}/>
+        <Card icono={faG} title='Google Analytics' description={<>Familiarity with Google Cloud Data and Analytics </>}/>
       </div>
     </div>
   )
@@ -46,7 +47,7 @@ const Card = ({ icono, title,description }) => {
           </div>
           <div className='h-5/6 flex flex-col items-center text-white'>
             <h4 className=' uppercase font-semibold text-xl mb-5'>{title}</h4>
-            <p className='text-xs uppercase '>{description}</p>
+            <p className='text-xs uppercase text-center'>{description}</p>
           </div>
         </div>
     </div>
