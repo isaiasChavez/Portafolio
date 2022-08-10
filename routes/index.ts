@@ -9,6 +9,12 @@ export const routes = {
             projects:{
                 voz:'/project/voz'
             }
+        },
+        icalia: {
+            name:'/company/icalia',
+            projects:{
+                oyeapp:'/project/voz'
+            }
         }
     }
 

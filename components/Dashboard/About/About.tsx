@@ -40,32 +40,17 @@ export default memo(function About() {
             height={400}
           />
         </div>
-        <div className="  md:mt-0 w-full px-5 md:w-7/12 md:px-2  mt-8 md:mt-4">
+        <div className="  md:mt-0 w-full px-5 md:w-7/12 md:px-2  mt-8 ">
           <div>
-            <h3 className="text-lg md:text-xl mb-4">
+            <h3 className="text-lg md:text-2xl mb-4">
               Hello! I am Isaías Chávez
             </h3>
             <hr className="w-1/12 mb-5" />
             <h2 className=" text-xl md:text-2xl mb-10">
-              I am a web and mobile developer with experience in front end and
-              backend.
+              I am a web and <b className="text-secondary">React Native developer</b>  with experience in <b className="text-secondary">Frontend</b> and <b>Backend</b>.
             </h2>
-            <p className="text-sm md:text-lg">
-              Hi, thanks for reading this. My name is Isaías Chávez, I am a
-              student of the Computer Engineering career at the Technological
-              University of La Mixteca I am currently studying the 5th semester.
-              Since I was 17 I have been passionate about the world of web
-              development and I have been very aware of all kinds of
-              technologies that have been emerging since then. Everything I know
-              so far I have learned it self-taught through courses, most of them
-              paid for since I was fortunate to be able to acquire a
-              subscription to a course platform. I have also taken on Udemy and
-              one that another on youtube. I love learning and I love design.
-              That is why I have focused on the front-end part but I am also
-              filling in the gaps in the backend. If someone gives me the
-              opportunity to work professionally, I would love to be able to do
-              so. My networks are Facebook Twitter or the codes of my projects
-              are in Github COURSES AND WORKSHOPS I HAVE TAKEN
+            <p className="text-sm md:text-lg font-normal">
+            Hi, my name is <b> Isaías Chávez</b> and I'm a computer Engineer with experience as FullStack/React Native Developer. I'm 23 and currently, I'm working as a Software engineer. I have made many applications in my career, giving support or making it from scratch. I have experience working on teams from America and have conversational English. I have good soft skills and I can work very well with my teams. I love to learn and listen. I can be a very good tool for your company.
             </p>
           </div>
           <div className="mt-8">

@@ -5,5 +5,5 @@
 }
 .profilePicture{
     filter: grayscale(2);
-    border-radius: 6px;
+    border-radius: 12px;
 }
