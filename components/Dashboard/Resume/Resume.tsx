@@ -29,7 +29,7 @@ const Resume = () => {
         link={`${routes.companies.inmersys.name}`}
           title="Inmersys"
           charge="Web, movile and AR/VR developer"
-          description="At this time, i learn a lot of things about many areas of web development. I worked with servers, backend, frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
+          description="At this time, I learn a lot of stuff about many areas of web development. I worked with servers, backend, frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
           date="10/10/2020 - 29/04/2021"
         
         />
@@ -37,7 +37,8 @@ const Resume = () => {
           link={routes.companies.icalia.name}
           title="IcaliaLabs"
           charge="Software Enginner"
-          description="At this time, i learn a lot of things about many areas of web development. I worked with servers, backend, frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
+          description="I learn how to work with a team from America. I worked as a React Native developer
+          , frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
           date="10/10/2020 - 29/04/2021"
         />
       </div>
