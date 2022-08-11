@@ -8,10 +8,10 @@ const Footer = () => {
           <span className='text-secondary'>N</span>orella
         </h3>
         <div className='flex justify-around w-full my-8 mb-12'>
-          <div className='w-8 h-8 mr-2 cursor-pointer '> <img src="/assets/icons/icons8-facebook-f.svg"/></div>
-          <div className='w-8 h-8 mr-2 cursor-pointer '> <img src="/assets/icons/icons8-github.svg"/></div>
-          <div className='w-8 h-8 mr-2 cursor-pointer '> <img src="/assets/icons/icons8-instagram.svg"/></div>
-          <div className='w-8 h-8 mr-2 cursor-pointer '> <img src="/assets/icons/icons8-tik-tok.svg"/></div>
+          <div className='w-8 h-8 mr-2 cursor-pointer '> <a target="_blank" rel="noreferrer"  href="https://www.facebook.com/profile.php?id=100002466696106"> <img src="/assets/icons/icons8-facebook-f.svg"/> </a> </div>
+          <div className='w-8 h-8 mr-2 cursor-pointer '> <a target="_blank" rel="noreferrer" href="https://github.com/isaiasChavez/">  <img src="/assets/icons/icons8-github.svg"/></a></div>
+          <div className='w-8 h-8 mr-2 cursor-pointer '> <a target="_blank" rel="noreferrer" href='#' > <img  src="/assets/icons/icons8-instagram.svg"/> </a> </div>
+          <div className='w-8 h-8 mr-2 cursor-pointer '> <a target="_blank" rel="noreferrer" href='https://www.tiktok.com/@soyelamargado' > <img src="/assets/icons/icons8-tik-tok.svg"/></a> </div>
         </div>
         <p className="text-xs md:text-md">All Rights Reserved © 2020 Norella</p>
       </div>

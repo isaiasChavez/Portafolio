@@ -23,7 +23,6 @@ const Dashboard: React.FC<DashboardProps> = () => {
         <Services />
         <Resume />
         <Skills />
-        <Portfolio />
         <Contact />
         <Footer />
       </div>

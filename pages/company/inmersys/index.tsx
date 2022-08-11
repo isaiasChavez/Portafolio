@@ -45,17 +45,7 @@ const Inmersys: React.FC<CompanyProps> = () => {
           <h3 className="font-semibold">Tiempo de trabajo:</h3>
           <span className="ml-3 text-graycust">1 año y 3 meses</span>
         </div>
-        <div className="mb-6">
-          <h3 className="mb-6 font-semibold">Responsabilidades:</h3>
-          <ul className="list-disc text-graycust ">
-            <li>
-              Dí mantenimiento a aplicaciones, cree muchas más desde cero
-              haciendo la parte del Cliente y el servidor, además del despliegue
-              y mantenimiento.
-            </li>
-            <li>Aprendí a trabajar en equipo con metodologías ágiles.</li>
-          </ul>
-        </div>
+       
         <div>
           <h3 className="mb-6 font-semibold">Proyectos:</h3>
         </div>
@@ -69,8 +59,16 @@ const Inmersys: React.FC<CompanyProps> = () => {
           linkSite="https://play.google.com/store/apps/details?id=com.inmersys.bioderma&hl=es_MX"
         />
         <ProjectRow
+          stack="ReactJS, React Native, NestJS, Typeorm, PostgresSQL, Firebase "
+          title="Bioderma (APP)"
+          subject="Realicé la migración de la app completa hacia la nueva versión de React Native (0.6 en adelante), además de integrar nuevas funcionalidades como tienda en linea y Quizts, se utilizaron nuevas tecnologías como React Router y frameworks de UI como RN Elements, además aprendí a trabajar con PushNotifications, traking del comportamiento del usuario. Mantuve este proyecto durante toda mi estancia en la empresa dando mantenimiento y agregando nuevos features.  "
+          link={routes.companies.inmersys.projects.voz}
+          linkSite="https://play.google.com/store/apps/details?id=com.inmersys.bioderma&hl=es_MX"
+        />
+        <ProjectRow
           stack=" Stripe, Nodejs, Nestjs, Typescript, Ant Design, TailwindCSS, LetsEncrypt, Nextjs, TypeORM"
           title="Ocupath"
+          codeLink="https://github.com/isaiasChavez/ocupath"
           linkSite="https://ocupath.vercel.app/"
           subject="Último proyecto que realicé para la empresa, consistía en un software para gestionar usuarios que accederían a una plataforma de realidad virtual hecha en Unity, el sistema debía gestionar usuarios por medio de suscripciones que tenían que ser pagadas, fue mi última incursión en pagos en linea con stripe, el software gestionaba contenido que sería desplegado en la aplicación de realidad virtual a manera de presentaciones por lo que trabajé con AWS para gestionar esos contenidos además de gestionar el envío de correos. También aprendí a Maquetar correos"
           link={routes.companies.inmersys.projects.voz}

@@ -30,7 +30,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({
           {title}
         </h3>
         <div className="text-graycust mb-4">
-          <p className=" font-thin pb-4">{subject}</p>
+          <p className=" font-normal md:font-thin pb-4">{subject}</p>
           <h3 className="text-graycust font-bold">Tecnologías utilizadas</h3>
           <p> {stack}</p>
         </div>

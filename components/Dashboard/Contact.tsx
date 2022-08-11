@@ -35,7 +35,7 @@ const Contact:React.FC<ContactProps> = () => {
   return (
     <Element name='contact' id="contact" className='  md:mx-20 lg:mx-32 xl:mx-64 '>
       <div className='h-1/6 text-secondary  uppercase font-semibold flex flex-col justify-center items-center md:mb-10'>
-        <h2 className='text-center text-2xl mb-8 md:mb-0'>Contact me</h2>
+        <h2 className='text-center text-2xl mb-8 md:mb-6'>Contact me</h2>
         <span className='flex items-center '>
           ----
           <FontAwesomeIcon className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faIdCard} />
@@ -56,7 +56,7 @@ const Contact:React.FC<ContactProps> = () => {
         <Card icono={faPhoneAlt} title='Phone' subtitle='+52 9511212436' />
         <div></div>
       </div>
-      <div className=' flex flex-wrap mx-5 md:mx-0 bg-darked-900  rounded shadow-lg'>
+      {/* <div className=' flex flex-wrap mx-5 md:mx-0 bg-darked-900  rounded shadow-lg'>
         <form name="contact" method="POST" data-netlify="true" className='w-full  h-full darked-900 p-10'>
           <div className='w-full  relative flex justify-center items-center h-14 '>
             <input type="hidden" name="contact" value="contact"/>
@@ -114,7 +114,7 @@ const Contact:React.FC<ContactProps> = () => {
             </button>
           </div>
         </form>
-      </div>
+      </div> */}
     </Element>
   )
 }
