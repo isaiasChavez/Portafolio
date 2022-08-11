@@ -91,7 +91,7 @@ const Inmersys: React.FC<CompanyProps> = () => {
               Proyecto para una empresa de salud, se quería presentar un nuevo
               producto por lo cual se diseño una página a manera de
               presentación, contenía varios pasos y animaciones con{" "}
-              <a href="https://threejs.org/">Threejs</a>, para representar la
+              <a className="text-secondary underline" href="https://threejs.org/">Threejs</a>, para representar la
               aplicación del producto. El sitio fue enteramente estático y
               representó un reto para diseñar cada una de las animaciones
             </>
@@ -126,7 +126,7 @@ const Inmersys: React.FC<CompanyProps> = () => {
             <>
               Proyecto basado con el proyecto pasado Juguetilandia, se cambiaron
               las escenas 3D y en este proyecto me tocó trabajar por primera vez
-              con las tecnologías 3D, <a href="https://threejs.org/">Threejs</a>
+              con las tecnologías 3D, <a className="text-secondary underline" href="https://threejs.org/">Threejs</a>
               , se realizaron cambios en el CMS y se readaptó el proyecto
               pasado.
             </>
