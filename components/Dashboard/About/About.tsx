@@ -7,24 +7,9 @@ import Image from "next/image";
 
 export default memo(function About() {
   return (
-    <div className="min-h-screen h-full py-10 w-full text-white md:px-10 lg:px-20 flex flex-col  items-center">
+    <div className="min-h-screen bg-darked-900 h-full py-10 w-full text-white md:px-10 lg:px-20 flex flex-col  items-center">
       <div
-        className={`text-secondary  uppercase font-semibold flex flex-col justify-center items-center md:mb-10 ${styles.titleContainer}`}
-      >
-        <h2 className="text-center text-2xl mb-8 md:mb-4">About me</h2>
-        <span className="flex items-center ">
-          {" "}
-          ----
-          <FontAwesomeIcon
-            className="w-8 h-8 text-secondary text-2xl mx-4"
-            icon={faAddressCard}
-          />
-          ----{" "}
-        </span>
-      </div>
-
-      <div
-        className={` ${styles.aboutContainer} flex flex-wrap w-full  items-center mt-8 md:mt-4`}
+        className={` ${styles.aboutContainer} flex flex-wrap w-full  items-center mt-8 md:pt-20`}
       >
         <div
           className=" w-full md:w-5/12 overflow-hidden flex  justify-center items-center  "
@@ -37,7 +22,7 @@ export default memo(function About() {
             src="/assets/img/me.jpeg"
             alt="Landscape picture"
             width={400}
-            height={400}
+            height={370}
           />
         </div>
         <div className="  md:mt-0 w-full px-5 md:w-7/12 md:px-2  mt-8 ">
@@ -54,7 +39,7 @@ export default memo(function About() {
             </p>
           </div>
           <div className="mt-8">
-            <button className="w-56 mb-8 bg-secondary py-5 md:py-3 text-white uppercase font-semibold shadow">
+            <button className="w-56 mb-8 bg-secondary hover:bg-secondaryLight duration-300 py-5 md:py-3  text-white uppercase font-semibold shadow">
               <a href="/assets/cvn.pdf" download="isaias">
                 Download CV
               </a>

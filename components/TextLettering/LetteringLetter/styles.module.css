@@ -1,0 +1,20 @@
+.letter{
+    background-color: ;
+    animation-name: splitup;
+    animation-duration: 5s;
+    
+}
+
+@keyframes splitup {
+    0% {
+        transform: rotateX(20deg);
+    }
+    50%{
+        transform: rotateX(50deg);
+
+    }
+    100%{
+        transform: rotateX(90deg);
+
+    }
+}

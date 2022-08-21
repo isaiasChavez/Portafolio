@@ -7,6 +7,7 @@ module.exports = {
       ...theme('colors'),
       'darked': '#333',
       'secondary': '#fa9b1b',
+      'secondaryLight': '#D07000',
       'darked-900': '#292929',
       
    } ),

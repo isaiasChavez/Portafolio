@@ -8,7 +8,7 @@ interface CompanyProps {}
 
 const Inmersys: React.FC<CompanyProps> = () => {
   return (
-    <Layout padding="0 3rem">
+    <Layout fade padding="0 3rem">
       <div className="w-full flex  flex-wrap md:flex-nowrap pt-8 ">
         <div
           className=" h-44 md:h-72 w-full md:w-6/12 overflow-hidden"

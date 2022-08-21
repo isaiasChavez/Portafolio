@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div className=' min-h-screen mx-5 md:mx-20 lg:mx-32 xl:mx-32 md:mb-32'>
      <div className='h-1/6 text-secondary  uppercase font-semibold flex flex-col justify-center items-center md:mb-10'>
-          <h2 className='text-center text-2xl mb-8 md:mb-0'>my portfolio</h2>
+          <h2 className='text-center text-2xl mb-8 md:mb-0'>my experience</h2>
           <span className='flex items-center '>
             ----
             <FontAwesomeIcon className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faBriefcase} />

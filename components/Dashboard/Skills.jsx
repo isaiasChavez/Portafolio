@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCogs } from '@fortawesome/free-solid-svg-icons'
+import Zoom from 'react-reveal/Zoom';
 
 const Skills = () => {
   return (
@@ -38,10 +39,14 @@ const Skills = () => {
 }
 
 const Skill = ({ name }) => {
+
   return (
+    <Zoom>
+
     <div className='w-3/12  md:w-4/12 xl:w-2/12 flex justify-center items-center '>
       <h3 className='text-xs md:text-2xl text-center font-semibold text-white'>{name}</h3>
     </div>
+    </Zoom>
   )
 }
 export default Skills

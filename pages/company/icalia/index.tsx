@@ -2,11 +2,13 @@ import Layout from "../../../components/shared/layout";
 import ProjectRow from "../../../components/shared/ProyectRow";
 import { routes } from "../../../routes";
 import styles from "./styles.module.css";
+
 interface CompanyProps {}
 
 const Icalia: React.FC<CompanyProps> = () => {
   return (
-    <Layout className="px-6 md:px-16">
+    <Layout fade className="px-6 md:px-16">
+
       <div className="w-full flex  flex-wrap md:flex-nowrap pt-8 ">
         <div
           className=" h-44 md:h-72 w-full md:w-6/12 overflow-hidden"
@@ -20,7 +22,7 @@ const Icalia: React.FC<CompanyProps> = () => {
         <div
           className="h-44 md:h-72 w-full mt-4 md:mt-0 md:w-6/12 overflow-hidden"
           style={{
-            backgroundImage: "url('/assets/img/icalia/teammexico.jpeg')",
+            backgroundImage: "url('/assets/img/icalia/equipo2.png')",
             backgroundPosition: "center",
             backgroundSize: "100% 100%",
           }}
@@ -54,15 +56,15 @@ const Icalia: React.FC<CompanyProps> = () => {
           linkSite="https://www.virtualterms.com/"
           title="virtualterms.com"
           subject="Sitio Web para la firma de contratos Pear To Pear, el sitio web requirió de mucho mantenimiento solucionando bugs y agregando nuevas funcionalidades, cliente de América con el cual tenía contacto directo para obtención de requerimientos y charlas sobre el proyecto."
-          link={routes.companies.icalia.projects.oyeapp}
+          link={routes.companies.icalia.projects.virtualterms}
         />
         <ProjectRow
           stack=""
           codeLink=""
-          linkSite="www.rockefellercenter.com"
+          linkSite="https://www.rockefellercenter.com/"
           title="rockefellercenter.com"
           subject="Segundo Proyecto en el cual trabajé a la par de un equipo de desarrollo como Frontend, me dediqué a tareas de lógica implementando analíticas para detectar el comportamiento detallado del usuario además de crear un sistema para comparación de tickets y sistema de reservas. "
-          link={routes.companies.icalia.projects.oyeapp}
+          link={routes.companies.icalia.projects.rockefeller}
         />
         <ProjectRow
           stack=""
@@ -73,6 +75,7 @@ const Icalia: React.FC<CompanyProps> = () => {
         />
       </div>
     </Layout>
+
   );
 };
 

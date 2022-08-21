@@ -4,6 +4,6 @@
     height: 100%;
 }
 .profilePicture{
-    filter: grayscale(2);
+    filter: grayscale(0.2);
     border-radius: 12px;
 }
