@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCogs } from '@fortawesome/free-solid-svg-icons'
-import Zoom from 'react-reveal/Zoom';
+const Zoom = require("react-reveal/Zoom");
 
 const Skills = () => {
   return (

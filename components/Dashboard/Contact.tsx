@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Element } from "react-scroll";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import Fade from "react-reveal/Fade";
+const Fade = require("react-reveal/Fade");
 
 interface ContactProps {}
 

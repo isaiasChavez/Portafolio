@@ -1,7 +1,7 @@
 import styles from "../resume.module.css";
 
 import { useRouter } from "next/router";
-import Fade from "react-reveal/Fade";
+const Fade = require("react-reveal/Fade");
 
 interface ResumeCardProps {
   title: string;
