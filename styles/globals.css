@@ -8,7 +8,9 @@
     --text-secondary:#fa9b1b;
     --text-white: #e5e5e5;
     --black:#161616;
-    --bg-secondary:#292929;
+    --bg-secondary:rgb(41, 41, 41);
+    --bg-secondary-transparent:rgb(41, 41, 41,0.8);
+
     --darked900:#292929;
     font-family: 'Roboto', sans-serif;
 
@@ -17,3 +19,8 @@
 h3, h2, h1, h4, h5{
     color: var(--text-white);
 }
+
+.pushup_animation:hover{
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,38 @@
+.imageViewer {
+  background-color: var(--bg-secondary-transparent);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.topSection{
+  flex:0.85;
+  display: flex;
+  justify-content: center;
+  padding:4rem 0 1rem 0;
+  overflow: hidden;
+}
+.bottomSection{
+  flex:0.15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerButtons{
+  min-width: 15rem;
+  display: flex;
+  justify-content: space-around;     
+}
+.image{
+  object-fit: contain;
+}
+.exit{
+ position: fixed;
+ right: 2rem;
+ top: 2rem;
+ cursor: pointer;
+}

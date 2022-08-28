@@ -4,6 +4,11 @@
     height: 100%;
 }
 .profilePicture{
-    filter: grayscale(0.2);
-    border-radius: 12px;
+    border-radius:100%;
+    height: 20rem;
+    width: 20rem;
+    filter: saturate(1.1);
+    box-shadow: -1px 1px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 12px 0px rgba(0,0,0,0.75);
 }

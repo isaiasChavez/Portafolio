@@ -1,3 +1,46 @@
 .projectsContainer{
     min-height: 40vh;
 }
+
+.slider{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+}
+
+.sliderItem{
+ width: 100vw;
+ height: 50vh;
+}
+.sliderItemImg{
+object-fit: contain;
+height: 100%;
+width: 100%;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 3rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.imagesContainer{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.imagesItem{
+    min-width: 20rem;
+    width: 33%;
+    max-width: 33%;
+    height: 20rem;
+    background-color: white;
+    max-height: 30rem;
+}
