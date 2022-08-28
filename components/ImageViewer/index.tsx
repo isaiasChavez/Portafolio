@@ -80,4 +80,7 @@ const ImageViewer = React.forwardRef<any, ImageViewerProps>((props:ImageViewerPr
   );
 });
 
+ImageViewer.displayName = 'ImageViewer';
+
+
 export default ImageViewer;
