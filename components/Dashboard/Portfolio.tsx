@@ -34,7 +34,7 @@ const Portfolio = () => {
   )
 }
 
-const Card = ({urlImage,url}) => {
+const Card = ({urlImage,url}:{urlImage:string,url:string}) => {
   return (
 
     <div className=' bg-white w-5/12 md:w-4/12 xl:w-3/12 m-1 mb-3 md:mb-0 md:m-10  flex justify-center items-center'>
