@@ -32,7 +32,7 @@ export default memo(function About() {
               <b className="text-secondary">Backend</b>.
             </h2>
             <p className="text-sm md:text-lg font-normal">
-              Hi, my name is <b> Isaías Chávez</b> and I&lsquo;m a computer
+              I&lsquo;m a computer
               Engineer with experience as FullStack/React Native Developer.
               I&lsquo;m 23 and currently, I&lsquo;m working as a Software
               engineer. I have made many applications in my career, giving
