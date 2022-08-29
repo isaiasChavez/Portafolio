@@ -64,7 +64,7 @@ const ImageViewer = React.forwardRef<any, ImageViewerProps>((props:ImageViewerPr
       <div className={` ${styles.topSection}` } onClick={onClose}>
         <img className={styles.image} src={currentImage} alt="" />
       </div>
-      <div className={` ${styles.bottomSection}`}>
+      { images.length>1 && <div className={` ${styles.bottomSection}`}>
         <div className={` ${styles.centerButtons}  `}>
           <button onClick={backImage}>
             <FontAwesomeIcon  className="pushup_animation" color="#fa9b1b" size="3x" icon={faArrowLeft} />
@@ -74,7 +74,7 @@ const ImageViewer = React.forwardRef<any, ImageViewerProps>((props:ImageViewerPr
             <FontAwesomeIcon className="pushup_animation" color="#fa9b1b" size="3x" icon={faArrowRight}  />
           </button>
         </div>
-      </div>
+      </div>}
     </div>
     </Fade>
   );

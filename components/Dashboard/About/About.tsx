@@ -11,7 +11,7 @@ export default memo(function About() {
         className={` ${styles.aboutContainer} flex flex-wrap w-full  items-center mt-8 md:pt-20`}
       >
         <div
-          className=" w-full md:w-5/12 overflow-hidden flex  justify-center items-center  "
+          className=" w-full md:w-5/12 overflow-hidden flex  justify-center items-center  py-4"
         >
           <img
             alt="Isaías Chávez"

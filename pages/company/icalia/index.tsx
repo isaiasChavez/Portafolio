@@ -30,9 +30,13 @@ const Icalia: React.FC<CompanyProps> = () => {
         images={images}
         imageSelected="/assets/img/icalia/teamusa.jpeg"
       />
-      <Layout fade className="px-6 md:px-16 pt-5 pb-10">
-        <div className="w-full min-h-fit flex items-center py-10">
-          <img className={styles.logo} src="/assets/img/icalia/logo.jpg" alt="" />
+      <Layout fade className="px-4 md:px-16 pt-5 pb-10">
+        <div className="w-full min-h-fit flex items-start md:items-center py-10  flex-col md:flex-row">
+          <img
+            className={`${styles.logo} mb-8`}
+            src="/assets/img/icalia/logo.jpg"
+            alt=""
+          />
           <h3 className="text-6xl m-0 text-secondary">
             {" "}
             <a
@@ -53,7 +57,7 @@ const Icalia: React.FC<CompanyProps> = () => {
           <h3 className="mb-6 font-semibold">Proyectos:</h3>
         </div>
 
-        <div className={`${styles.projectsContainer}`}>
+        <div className={`${styles.projectsContainer} pb-10`}>
           <ProjectRow
             stack="ReactJS, Nextjs, Firebase Cloud Functions, Stripe, Google Analytics, GTM, Nodejs, Typescript"
             codeLink=""
@@ -100,16 +104,37 @@ const Icalia: React.FC<CompanyProps> = () => {
             link={routes.companies.icalia.projects.oyeapp}
           />
         </div>
-        <div className={styles.imagesContainer}>
-         <div className={styles.imagesItem}>
-           <img onClick={()=> component.current?.open('/assets/img/icalia/equipo2.png')} className={styles.image} src="/assets/img/icalia/equipo2.png" alt="" />
-         </div>
-         <div className={styles.imagesItem}>
-           <img className={styles.image} onClick={()=> component.current?.open('/assets/img/icalia/teammexico.jpeg')}  src="/assets/img/icalia/teammexico.jpeg" alt="" />
-         </div>
-         <div className={styles.imagesItem}>
-         <img className={styles.image} onClick={()=> component.current?.open('/assets/img/icalia/teamusa.jpeg')} src="/assets/img/icalia/teamusa.jpeg" alt="" />
-         </div>
+        <div className={`${styles.imagesContainer}`}>
+          <div className={styles.imagesItem}>
+            <img
+              onClick={() =>
+                component.current?.open("/assets/img/icalia/equipo2.png")
+              }
+              className={`${styles.image} selectable`}
+              src="/assets/img/icalia/equipo2.png"
+              alt=""
+            />
+          </div>
+          <div className={styles.imagesItem}>
+            <img
+              className={`${styles.image} selectable`}
+              onClick={() =>
+                component.current?.open("/assets/img/icalia/teammexico.jpeg")
+              }
+              src="/assets/img/icalia/teammexico.jpeg"
+              alt=""
+            />
+          </div>
+          <div className={styles.imagesItem}>
+            <img
+              className={`${styles.image} selectable`}
+              onClick={() =>
+                component.current?.open("/assets/img/icalia/teamusa.jpeg")
+              }
+              src="/assets/img/icalia/teamusa.jpeg"
+              alt=""
+            />
+          </div>
         </div>
       </Layout>
     </>
