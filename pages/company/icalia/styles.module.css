@@ -42,8 +42,17 @@ width: 100%;
     .image{
         border-radius: 6px;
     }
+    .container{
+        padding: 0 1rem;
+    }
+    
 }
 @media (min-width: 768px) { 
+    .container{
+        margin: 0 auto;
+        max-width: 1280px;
+        padding: 0 1rem;
+    }
     .imagesItem{
         flex:1;
         max-width: 50%;

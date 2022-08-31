@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import styles from './resume.module.css'
 import { useRouter } from "next/router";
 import { routes } from "../../../routes";
 import ResumeCard from "./ResumeCard";
+import GeneralContext from "../../../state/general/general.context";
 const Resume = () => {
+  const context = useContext(GeneralContext)
+
   return (
-    <div className="  w-full py-8 ">
-      <div className="h-1/6 text-secondary  uppercase font-semibold flex flex-col justify-center items-center md:mb-10">
+    <div
+    style={{
+      zIndex:-2
+    }} 
+    className={`w-full  pb-8 bg-darked-900 relative  ${styles.container}`}>
+     <div className={styles.inner}>
+      <div  className={`${styles.title}  text-secondary bg-darked-900  uppercase font-semibold flex flex-col justify-center items-center md:mb-10`}>
         <h2 className="text-center text-2xl mb-8 md:mb-4 ">Experience</h2>
         <span className="flex items-center ">
           ----
@@ -19,30 +27,34 @@ const Resume = () => {
           ----
         </span>
       </div>
-      <div className="h-5/6 w-full flex flex-wrap px-2 md:px-20 mt-8 md:mt-4">
-        <ResumeCard
+      <img
+      style={{
+        top:`${context? -70 + (context.scrollPercentage*1.3):0}%`,
+        transform:` scale(${context? (context.scrollPercentage*1.2):0}%) rotate(180deg)`,
+      }}
+      className={styles.mariposa} src="/assets/img/mariposa.png"  alt="" />
+      <ResumeCard
+          background={"/assets/img/icalia/logo.webp"}
           link={routes.companies.icalia.name}
           title="IcaliaLabs"
           charge="Software Enginner"
           description="I learn how to work with a team from America. I worked as a React Native developer
           , frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
           date="10/10/2020 - 29/04/2021"
+          right={true}
         />
         <ResumeCard
-        link={`${routes.companies.inmersys.name}`}
+          background={"/assets/img/inmer/logo.jpg"}
+          link={routes.companies.inmersys.name}
           title="Inmersys"
-          charge="Web, movile and AR/VR developer"
-          description="At this time, I learn a lot of stuff about many areas of web development. I worked with servers, backend, frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
+          charge="FullStack | React Native Developer"
+          description="I learn how to work with a team from America. I worked as a React Native developer
+          , frontend, apps and a little bit of web VR and Web AR. It was a fun experience and i loved this. It was my first experience."
           date="10/10/2020 - 29/04/2021"
-        
-        />
-        <ResumeCard
-          title="Technological University of the Mixteca"
-          charge="Computer Engineering"
-          description="During this time I worked with technologies such as PostgreSQL, C, Algorithm Analysis, Data Structures, etc. I made a lot of friends in the area."
-          date="2017 - 2022"
-        />
-      </div>
+          />
+      
+      </div> 
+      <p className="absolute font-semibold text-xs left-0 bottom-0"><a href="https://www.freepik.es/vector-gratis/polilla-negra-retro-ilustracion-imagenes-predisenadas_11235618.htm#query=svg&position=2&from_view=keyword">Image by pch.vector</a> on Freepik</p>
     </div>
   );
 };

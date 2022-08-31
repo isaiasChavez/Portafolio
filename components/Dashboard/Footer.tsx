@@ -1,4 +1,5 @@
 import React from "react";
+const Roll  = require("react-reveal/Roll");
 
 const Footer = () => {
   return (
@@ -9,6 +10,9 @@ const Footer = () => {
           <h3 className="text-3xl mb-2">
             <span className="text-secondary">N</span>orella
           </h3>
+          <Roll left cascade>
+
+          
           <div className="flex justify-around w-full my-8 mb-12">
             <div className="w-8 h-8 mr-2 cursor-pointer ">
               {" "}
@@ -51,6 +55,7 @@ const Footer = () => {
               </a>{" "}
             </div>
           </div>
+          </Roll>
           <p className="text-xs md:text-md">
             All Rights Reserved © 2020 Norella
           </p>

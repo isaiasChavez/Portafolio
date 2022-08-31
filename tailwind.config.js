@@ -7,13 +7,16 @@ module.exports = {
       ...theme('colors'),
       'darked': '#333',
       'secondary': '#fa9b1b',
-      'secondaryLight': '#D07000',
+      'secondary-200': '#b36b0f',
       'darked-900': '#292929',
+      'darked-800': '#3d3c3c',
       
    } ),
    textColor: {
       'white': '#fff',
       'secondary': '#fa9b1b',
+      'secondary-light': '#df8816',
+      'darked': '#333',
       'graycust': '#c2c0c3',
       'danger': '#e3342f',
       'brown-custom':'#ecc38c',

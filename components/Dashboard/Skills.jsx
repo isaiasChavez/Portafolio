@@ -5,7 +5,7 @@ const Zoom = require("react-reveal/Zoom");
 
 const Skills = () => {
   return (
-    <div className=' min-h-screen md:mx-20 lg:mx-32 xl:mx-32 '>
+    <div className=' min-h-screen   bg-secondary py-10 text-shadow'>
        <div className='h-1/6 text-secondary  uppercase font-semibold flex flex-col justify-center items-center md:mb-10'>
           <h2 className='text-center text-2xl mb-8 md:mb-0'>Skills</h2>
           <span className='flex items-center '>
@@ -43,8 +43,8 @@ const Skill = ({ name }) => {
   return (
     <Zoom>
 
-    <div className='w-3/12  md:w-4/12 xl:w-2/12 flex justify-center items-center '>
-      <h3 className='text-xs md:text-2xl text-center font-semibold text-white'>{name}</h3>
+    <div className='w-2/12  md:w-4/12 xl:w-2/12 flex justify-center items-center '>
+      <h3 className='text-xs md:text-2xl xl:text-xl text-center font-semibold text-white text-shadow'>{name}</h3>
     </div>
     </Zoom>
   )

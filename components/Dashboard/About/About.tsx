@@ -1,26 +1,46 @@
-import React, { memo } from "react";
+import React, { memo, useContext } from "react";
+import GeneralContext from "../../../state/general/general.context";
 import styles from "./styles.module.css";
-import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
+const Slide  = require("react-reveal/Slide");
 
-export default memo(function About() {
+
+export default function About() {
+
+  const context = useContext(GeneralContext)
+
+
   return (
-    <div className="min-h-screen bg-darked-900 h-full py-10 w-full text-white md:px-10 lg:px-20 flex flex-col  items-center">
+    <div
+    
+    className={`   h-full py-10 w-full text-white md:px-10 lg:px-20  ${styles.header}`}>
       <div
-        className={` ${styles.aboutContainer} flex flex-wrap w-full  items-center mt-8 md:pt-20`}
+        style={{
+          opacity:`${ context ? 150 - (context.scrollPercentage*3.6): 0 }%`,
+        }}
+        className={` relative ${styles.aboutContainer} flex flex-col md:flex-row flex-wrap w-full  items-center  mt-8 md:pt-20`}
       >
         <div
-          className=" w-full md:w-5/12 overflow-hidden flex  justify-center items-center  py-4"
+          className=" w-full flex-1 md:w-5/12   flex  justify-center items-end md:items-center pb-20 md:pb-0  py-4"
         >
           <img
+            style={{
+              transform:`scale(${ context  && ((140 -  context.scrollPercentage *5)>100) ? 140 -  (context.scrollPercentage*5):100}%)`,
+              
+            }}
             alt="Isaías Chávez"
             className={styles.profilePicture}
             src="/assets/img/yo_i.jpg"
           />
         </div>
-        <div className="  md:mt-0 w-full px-5 md:w-7/12 md:px-2  mt-8 ">
+        <div
+        style={{
+          transform:`scale(${ context && 160 -  (context.scrollPercentage*4) > 100 ? 160 -  (context.scrollPercentage*4):100}%)`,
+          opacity:`${ context ? 180 - (context.scrollPercentage*4) : 100 }%`
+        }}
+        className="  flex-1  md:mt-0 w-full px-5 md:w-7/12 md:px-2   ">
           <div>
+            <Slide right>
+
             <h3 className="text-lg md:text-2xl mb-4">
               Hello! I am Isaías Chávez
             </h3>
@@ -41,8 +61,12 @@ export default memo(function About() {
               soft skills and I can work very well with my teams. I love to
               learn and listen. I can be a very good tool for your company.
             </p>
+            </Slide>
           </div>
           <div className="mt-8">
+          <Slide left>
+
+
             <button className="w-56 mb-8 bg-secondary hover:bg-secondaryLight duration-300 py-5 md:py-3  text-white uppercase font-semibold shadow">
               <a href="/assets/cvn.pdf" download="isaias">
                 Download CV
@@ -51,9 +75,10 @@ export default memo(function About() {
             <button className="w-56 text-secondary uppercase font-semibold">
               <a href="#contact">Hire me</a>
             </button>
+          </Slide>
           </div>
         </div>
       </div>
     </div>
   );
-});
+}

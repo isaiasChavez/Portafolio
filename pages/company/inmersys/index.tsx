@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import ImageViewer, { ImageViewerRef } from "../../../components/ImageViewer";
-import Layout from "../../../components/shared/layout";
+import LayoutEmpty from "../../../components/shared/layout/empty";
 import ProjectRow from "../../../components/shared/ProyectRow";
 import { routes } from "../../../routes";
 import styles from "./styles.module.css";
@@ -21,7 +21,7 @@ const Inmersys: React.FC<CompanyProps> = () => {
         images={images}
         imageSelected="/assets/img/icalia/teamusa.jpeg"
       />
-      <Layout fade className="px-4 md:px-16 pt-5 pb-10">
+      <LayoutEmpty fade className="px-4 md:px-16 pt-5 pb-10">
         <div className="text-lg">
           <div className="w-full min-h-fit flex items-start md:items-center py-10  flex-col md:flex-row">
             <img
@@ -173,7 +173,7 @@ const Inmersys: React.FC<CompanyProps> = () => {
           </div>
          
         </div>
-      </Layout>
+      </LayoutEmpty>
     </>
   );
 };

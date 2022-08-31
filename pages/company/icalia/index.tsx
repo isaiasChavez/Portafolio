@@ -2,14 +2,14 @@ import Layout from "../../../components/shared/layout";
 import ProjectRow from "../../../components/shared/ProyectRow";
 import { routes } from "../../../routes";
 import { Swiper, SwiperSlide } from "swiper/react";
+const Slide  = require("react-reveal/Slide");
 
 import styles from "./styles.module.css";
 import ImageViewer, {
-  ImageViewerProps,
   ImageViewerRef,
 } from "../../../components/ImageViewer";
 import { useRef } from "react";
-import { Carousel } from "react-responsive-carousel";
+import LayoutEmpty from "../../../components/shared/layout/empty";
 
 interface CompanyProps {}
 
@@ -30,20 +30,22 @@ const Icalia: React.FC<CompanyProps> = () => {
         images={images}
         imageSelected="/assets/img/icalia/teamusa.jpeg"
       />
-      <Layout fade className="px-4 md:px-16 pt-5 pb-10">
-        <div className="w-full min-h-fit flex items-start md:items-center py-10  flex-col md:flex-row">
+      <LayoutEmpty fade className="pb-32">
+        <div className={`${styles.container}`}>
+
+        <div className={`w-full min-h-fit flex items-start md:items-center py-10  flex-col md:flex-row `}>
           <img
             className={`${styles.logo} mb-8`}
             src="/assets/img/icalia/logo.jpg"
             alt=""
-          />
+            />
           <h3 className="text-6xl m-0 text-secondary">
             {" "}
             <a
               href="https://www.icalialabs.com/"
               target="_blank"
               rel="noreferrer"
-            >
+              >
               IcaliaLabs
             </a>{" "}
           </h3>
@@ -58,6 +60,9 @@ const Icalia: React.FC<CompanyProps> = () => {
         </div>
 
         <div className={`${styles.projectsContainer} pb-10`}>
+        <Slide left >
+
+        
           <ProjectRow
             stack="ReactJS, Nextjs, Firebase Cloud Functions, Stripe, Google Analytics, GTM, Nodejs, Typescript"
             codeLink=""
@@ -73,7 +78,7 @@ const Icalia: React.FC<CompanyProps> = () => {
             title="rockefellercenter.com"
             subject="Segundo Proyecto en el cual trabajé a la par de un equipo de desarrollo como Frontend, me dediqué a tareas de lógica implementando analíticas para detectar el comportamiento detallado del usuario además de crear un sistema para comparación de tickets y sistema de reservas. "
             link={routes.companies.icalia.projects.rockefeller}
-          />
+            />
           <ProjectRow
             stack=""
             linkSite=""
@@ -103,6 +108,7 @@ const Icalia: React.FC<CompanyProps> = () => {
             }
             link={routes.companies.icalia.projects.oyeapp}
           />
+          </Slide>
         </div>
         <div className={`${styles.imagesContainer}`}>
           <div className={styles.imagesItem}>
@@ -113,7 +119,7 @@ const Icalia: React.FC<CompanyProps> = () => {
               className={`${styles.image} selectable`}
               src="/assets/img/icalia/equipo2.png"
               alt=""
-            />
+              />
           </div>
           <div className={styles.imagesItem}>
             <img
@@ -123,7 +129,7 @@ const Icalia: React.FC<CompanyProps> = () => {
               }
               src="/assets/img/icalia/teammexico.jpeg"
               alt=""
-            />
+              />
           </div>
           <div className={styles.imagesItem}>
             <img
@@ -133,10 +139,11 @@ const Icalia: React.FC<CompanyProps> = () => {
               }
               src="/assets/img/icalia/teamusa.jpeg"
               alt=""
-            />
+              />
           </div>
         </div>
-      </Layout>
+              </div>
+      </LayoutEmpty>
     </>
   );
 };

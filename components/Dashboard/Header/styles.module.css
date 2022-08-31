@@ -1,5 +1,4 @@
 .header{
-    background-image: url('/assets/img/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -12,3 +11,8 @@
        color:white;
        text-shadow: 1.2px 1.2px 1.2px var(--black);
    }
+
+   .canvas{
+    width: 100%;
+    height: 100%;
+}

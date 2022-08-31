@@ -1,8 +1,8 @@
 import "tailwindcss/tailwind.css";
+import styles from './styles.module.css'
 import About from "../../components/Dashboard/About/About";
 import Contact from "../../components/Dashboard/Contact";
 import Header from "../../components/Dashboard/Header/Header";
-import Portfolio from "../../components/Dashboard/Portfolio";
 import Resume from "../../components/Dashboard/Resume/Resume";
 import Skills from "../../components/Dashboard/Skills";
 import Footer from "../../components/Dashboard/Footer";
@@ -13,10 +13,13 @@ import Services from "../../components/Dashboard/Services";
 interface DashboardProps {}
 
 const Dashboard: React.FC<DashboardProps> = () => {
+
+
+
+
   return (
-    <Layout>
+    <Layout  background={styles.main}>
       <Wa />
-      <div className="">
         {/* <ProjectModal /> */}
         <Header />
         <About />
@@ -26,7 +29,6 @@ const Dashboard: React.FC<DashboardProps> = () => {
         <Contact />
       
         <Footer />
-      </div>
     </Layout>
   );
 };
