@@ -6,7 +6,6 @@ import { Canvas } from "@react-three/fiber";
 
 
 const Slide = require("react-reveal/Slide");
-const Fade = require("react-reveal/Fade");
 import styles from "./styles.module.css";
 import Model from "../../threejs/Model";
 
