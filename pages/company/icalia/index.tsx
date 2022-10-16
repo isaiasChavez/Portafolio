@@ -51,12 +51,12 @@ const Icalia: React.FC<CompanyProps> = () => {
           </h3>
         </div>
         <div className="mb-8 flex">
-          <h3 className="font-semibold">Tiempo de trabajo:</h3>
-          <span className="ml-3 text-graycust">5 meses</span>
+          <h3 className="font-semibold">Duration:</h3>
+          <span className="ml-3 text-graycust">5 months</span>
         </div>
 
         <div>
-          <h3 className="mb-6 font-semibold">Proyectos:</h3>
+          <h3 className="mb-6 font-semibold">Projects:</h3>
         </div>
 
         <div className={`${styles.projectsContainer} pb-10`}>
@@ -68,7 +68,8 @@ const Icalia: React.FC<CompanyProps> = () => {
             codeLink=""
             linkSite="https://www.virtualterms.com/"
             title="virtualterms.com"
-            subject="Sitio Web para la firma de contratos Pear To Pear, el sitio web requirió de mucho mantenimiento solucionando bugs y agregando nuevas funcionalidades, cliente de América con el cual tenía contacto directo para obtención de requerimientos y charlas sobre el proyecto."
+            subject="
+              It was a website where you can sign virtual contracts with virtual signs, Pear to Pear, the project needed maintain fixing bugs and adding new functionalities, it was a client from america and I had direct contact to him to give the requirements and talk about the project status, It was only me."
             link={routes.companies.icalia.projects.virtualterms}
           />
           <ProjectRow
@@ -76,7 +77,8 @@ const Icalia: React.FC<CompanyProps> = () => {
             codeLink=""
             linkSite="https://www.rockefellercenter.com/"
             title="rockefellercenter.com"
-            subject="Segundo Proyecto en el cual trabajé a la par de un equipo de desarrollo como Frontend, me dediqué a tareas de lógica implementando analíticas para detectar el comportamiento detallado del usuario además de crear un sistema para comparación de tickets y sistema de reservas. "
+            subject="
+              My second project, I was part of a team as a Frontend developer, my tasks were about implement analytics to track the user behavior and also to create a sistem to compare tickets and the booking system."
             link={routes.companies.icalia.projects.rockefeller}
             />
           <ProjectRow
@@ -85,6 +87,7 @@ const Icalia: React.FC<CompanyProps> = () => {
             title="OyeApp"
             subject={
               <>
+                
                 Proyecto en el cual trabajé como desarrollador React Native y
                 como agregado al equipo de una empresa de América:{" "}
                 <a

@@ -13,6 +13,7 @@ interface ResumeCardProps {
   date: string;
   background: string;
   right?: boolean;
+  hiddeButton?:boolean;
 }
 const ResumeCard: React.FC<ResumeCardProps> = ({
   title,
@@ -22,6 +23,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
   link,
   background,
   right,
+  hiddeButton
 }) => {
   const context = useContext(GeneralContext);
 
@@ -39,11 +41,10 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
       }}
       className={`${styles.card}     `}
     >
-      <div className={`${styles.innerCard} bg-darked-900 shadow-2xl`}>
-        <div className={`${styles.innerInnerCard} bg-darked-900 shadow-2xl flex`}>
-          <div className="w-5/12 h-full ">
+      <div className={`${styles.innerCard} bg-darked-900 shadow-2xl flex`}>
+          <div className="w-5/12 h-auto  ">
             <img
-              className={`${styles.companyImage} `}
+              className={`${styles.companyImage}  `}
               src={background}
               alt=""
             />
@@ -55,12 +56,11 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
               <b >{date}</b>
               </p>
             <div className="mt-8">
-            <button onClick={redirect} className="w-44 mb-8 bg-secondary hover:bg-secondaryLight duration-300  py-3 md:py-5 md:py-3  text-white uppercase font-semibold shadow">
+            {!hiddeButton && <button onClick={redirect} className="w-44 mb-8 bg-secondary hover:bg-secondaryLight duration-300  py-3 md:py-5 md:py-3  text-white uppercase font-semibold shadow">
                 Check projects
-            </button>
+            </button>}
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

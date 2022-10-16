@@ -22,9 +22,15 @@ export const routes = {
         icalia: {
             name:'/company/icalia',
             projects:{
-                oyeapp:'/project/voz',
-                virtualterms:'/project/virtual',
+                oyeapp:'/project/oyeapp',
+                virtualterms:'/project/virtualterms',
                 rockefeller:'/project/rockefeller'
+            }
+        },
+        sofftek: {
+            name:'/company/softtek',
+            projects:{
+                aeromexico:'/project/aeromexico'
             }
         }
     }

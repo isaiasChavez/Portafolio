@@ -41,12 +41,12 @@ const Inmersys: React.FC<CompanyProps> = () => {
             </h3>
           </div>
           <div className="mb-8 flex">
-            <h3 className="font-semibold">Tiempo de trabajo:</h3>
-            <span className="ml-3 text-graycust">1 año y 3 meses</span>
+            <h3 className="font-semibold">Duration:</h3>
+            <span className="ml-3 text-graycust">1 year and 3 months</span>
           </div>
 
           <div>
-            <h3 className="mb-6 font-semibold">Proyectos:</h3>
+            <h3 className="mb-6 font-semibold">Projects:</h3>
           </div>
         </div>
         <div className="mb-10">

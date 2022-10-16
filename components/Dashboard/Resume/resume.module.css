@@ -1,5 +1,6 @@
 .container{
-    min-height: 200vh;
+    min-height: fit-content;
+    padding-bottom: 3rem;
     animation: scroller 70s linear infinite;
     background-color: red;
     background: url('/assets/img/inmer/banner.jpg');
