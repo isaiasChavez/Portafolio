@@ -55,8 +55,8 @@ export default function About() {
               I&lsquo;m a computer
               Engineer with experience as FullStack/React Native Developer.
               Experienced developer with +2 years of trajectory. Dynamic, success-oriented, I can develop a complete project for you from scratch, 
-              backend, fronted and apps. Highly committed to results and continuous improvement. Detail focused to ensure results are above and beyond client's expectations. 
-              "Success is not just about winning, is about trascending."
+              backend, fronted and apps. Highly committed to results and continuous improvement. Detail focused to ensure results are above and beyond client&apos;s expectations. 
+              &apos;Success is not just about winning, is about trascending.&apos;
             </p>
             </Slide>
           </div>

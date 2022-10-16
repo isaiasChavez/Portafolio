@@ -14,7 +14,7 @@ interface ResumeCardProps {
   background: string;
   right?: boolean;
   hiddeButton?:boolean;
-  className?: React.CSSProperties
+  className?: string
 }
 const ResumeCard: React.FC<ResumeCardProps> = ({
   title,
