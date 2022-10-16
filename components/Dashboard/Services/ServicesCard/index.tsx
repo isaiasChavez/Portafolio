@@ -33,8 +33,8 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
             />{" "}
           </div>
           <div className="h-5/6 flex flex-col items-center text-white">
-            <h4 className=" uppercase font-semibold text-3xl mb-5">{title}</h4>
-            <p className="text-lg uppercase text-center">{description}</p>
+            <h4 className=" uppercase font-semibold text-2xl lg:text-3xl mb-5">{title}</h4>
+            <p className="text-md md:text-lg uppercase text-center">{description}</p>
           </div>
         </div>
       </div>

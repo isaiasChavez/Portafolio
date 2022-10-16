@@ -54,12 +54,9 @@ export default function About() {
             <p className="text-sm md:text-lg font-normal">
               I&lsquo;m a computer
               Engineer with experience as FullStack/React Native Developer.
-              I&lsquo;m 23 and currently, I&lsquo;m working as a Software
-              engineer. I have made many applications in my career, giving
-              support or making it from scratch. I have experience working on
-              teams from America and have conversational English. I have good
-              soft skills and I can work very well with my teams. I love to
-              learn and listen. I can be a very good tool for your company.
+              Experienced developer with +2 years of trajectory. Dynamic, success-oriented, I can develop a complete project for you from scratch, 
+              backend, fronted and apps. Highly committed to results and continuous improvement. Detail focused to ensure results are above and beyond client's expectations. 
+              "Success is not just about winning, is about trascending."
             </p>
             </Slide>
           </div>
