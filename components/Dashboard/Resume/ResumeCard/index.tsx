@@ -14,6 +14,7 @@ interface ResumeCardProps {
   background: string;
   right?: boolean;
   hiddeButton?:boolean;
+  className?: React.CSSProperties
 }
 const ResumeCard: React.FC<ResumeCardProps> = ({
   title,
@@ -23,7 +24,8 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
   link,
   background,
   right,
-  hiddeButton
+  hiddeButton,
+  className
 }) => {
   const context = useContext(GeneralContext);
 
@@ -39,7 +41,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
       style={{
         justifyContent: right ? "flex-end" : "flex-start",
       }}
-      className={`${styles.card}     `}
+      className={`${styles.card}  ${className}   `}
     >
       <div className={`${styles.innerCard} bg-darked-900 shadow-2xl flex`}>
           <div className="w-5/12 h-auto  ">

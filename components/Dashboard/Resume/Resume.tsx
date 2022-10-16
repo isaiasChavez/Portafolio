@@ -15,8 +15,8 @@ const Resume = () => {
       zIndex:-2
     }} 
     className={`w-full   bg-darked-900 relative  ${styles.container}`}>
-     <div className={styles.inner}>
-      <div  className={`${styles.title}  text-secondary bg-darked-900  uppercase font-semibold flex flex-col justify-center items-center md:mb-10`}>
+     <div className={`${styles.inner}`}>
+      <div  className={`${styles.title}  text-secondary bg-darked-900  uppercase font-semibold flex flex-col justify-center items-center  md:mb-10`}>
         <h2 className="text-center text-2xl mb-8 md:mb-4 ">Experience</h2>
         <span className="flex items-center ">
           ----
@@ -34,6 +34,7 @@ const Resume = () => {
       }}
       className={styles.mariposa} src="/assets/img/mariposa.png"  alt="" />
       <ResumeCard
+          className="mt-5"
           background={"/assets/img/sofftek/logo.png"}
           link={routes.companies.inmersys.name}
           title="Softtek"
