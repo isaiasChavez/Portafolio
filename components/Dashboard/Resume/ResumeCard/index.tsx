@@ -58,7 +58,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
               <b >{date}</b>
               </p>
             <div className="mt-8">
-            {!hiddeButton && <button onClick={redirect} className="w-44 mb-8 bg-secondary hover:bg-secondaryLight duration-300  py-3 md:py-5 md:py-3  text-white uppercase font-semibold shadow">
+            {!hiddeButton && <button onClick={redirect} className="inmersys-trigger w-44 mb-8 bg-secondary hover:bg-secondaryLight duration-300  py-3 md:py-5 md:py-3  text-white uppercase font-semibold shadow">
                 Check projects
             </button>}
             </div>
