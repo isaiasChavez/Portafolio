@@ -156,7 +156,7 @@ const Inmersys: React.FC<CompanyProps> = () => {
               onClick={() =>
                 viewer.current?.open("/assets/img/inmer/inmer.jpeg")
               }
-              className={`${styles.image} selectable`}
+              className={`${styles.image} selectable click-images`}
               src="/assets/img/inmer/inmer.jpeg"
               alt=""
             />

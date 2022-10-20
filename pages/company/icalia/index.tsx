@@ -119,14 +119,14 @@ const Icalia: React.FC<CompanyProps> = () => {
               onClick={() =>
                 component.current?.open("/assets/img/icalia/equipo2.png")
               }
-              className={`${styles.image} selectable`}
+              className={`${styles.image} selectable click-images`}
               src="/assets/img/icalia/equipo2.png"
               alt=""
               />
           </div>
           <div className={styles.imagesItem}>
             <img
-              className={`${styles.image} selectable`}
+              className={`${styles.image} selectable click-images`}
               onClick={() =>
                 component.current?.open("/assets/img/icalia/teammexico.jpeg")
               }
@@ -136,7 +136,7 @@ const Icalia: React.FC<CompanyProps> = () => {
           </div>
           <div className={styles.imagesItem}>
             <img
-              className={`${styles.image} selectable`}
+              className={`${styles.image} selectable click-images`}
               onClick={() =>
                 component.current?.open("/assets/img/icalia/teamusa.jpeg")
               }

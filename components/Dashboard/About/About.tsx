@@ -64,7 +64,7 @@ export default function About() {
           <Slide left>
 
 
-            <button className="w-56 mb-8 bg-secondary hover:bg-secondaryLight duration-300 py-5 md:py-3  text-white uppercase font-semibold shadow">
+            <button className=" cv-trigger w-56 mb-8 bg-secondary hover:bg-secondaryLight duration-300 py-5 md:py-3  text-white uppercase font-semibold shadow">
               <a href="/assets/cvn.pdf" download="isaias">
                 Download CV
               </a>

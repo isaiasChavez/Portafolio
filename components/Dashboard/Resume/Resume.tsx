@@ -43,6 +43,7 @@ const Resume = () => {
           date="01/09/2022 - Actually"
           right={true}
           hiddeButton
+          triggerClass="softtek-trigger"
           />
       <ResumeCard
           background={"/assets/img/icalia/logo.webp"}
@@ -52,6 +53,7 @@ const Resume = () => {
           description="I learn how to work with a team from America. I worked as a React Native developer from different clients from america designing new functionalities with complex animations, my greatest hit was to work for an app for J balbin. "
           date="10/03/2022 - 29/09/2022"
           right={false}
+          triggerClass="icalia-trigger"
         />
         <ResumeCard
           background={"/assets/img/inmer/logo.jpg"}
@@ -61,6 +63,7 @@ const Resume = () => {
           description="My first Job, the most incredibly company about 3D development, I learned a lot about how to work with differents technologies like Android, IOS, Threejs, and I nedded to learn the best practices to make a clear, standard and commond code for all my team. It was my first experience working with SCRUM."
           date="03/09/2020- 03/10/2021"
           right={true}
+          triggerClass="inmersys-trigger"
           />
        
       </div> 

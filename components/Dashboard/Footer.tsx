@@ -18,29 +18,31 @@ const Footer = () => {
               {" "}
               <a
                 target="_blank"
+                className="social-trigger"
                 rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=100002466696106"
               >
                 {" "}
-                <img src="/assets/icons/icons8-facebook-f.svg" />{" "}
+                <img src="/assets/icons/icons8-facebook-f.svg" className="social-trigger" />{" "}
               </a>{" "}
             </div>
             <div className="w-8 h-8 mr-2 cursor-pointer ">
               {" "}
               <a
                 target="_blank"
+                className="social-trigger"
                 rel="noreferrer"
                 href="https://github.com/isaiasChavez/"
               >
                 {" "}
-                <img src="/assets/icons/icons8-github.svg" />
+                <img src="/assets/icons/icons8-github.svg" className="social-trigger" />
               </a>
             </div>
             <div className="w-8 h-8 mr-2 cursor-pointer ">
               {" "}
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="#" className="social-trigger">
                 {" "}
-                <img src="/assets/icons/icons8-instagram.svg" />{" "}
+                <img src="/assets/icons/icons8-instagram.svg" className="social-trigger" />{" "}
               </a>{" "}
             </div>
             <div className="w-8 h-8 mr-2 cursor-pointer ">
@@ -49,9 +51,10 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.tiktok.com/@soyelamargado"
+                className="social-trigger"
               >
                 {" "}
-                <img src="/assets/icons/icons8-tik-tok.svg" />
+                <img src="/assets/icons/icons8-tik-tok.svg" className="social-trigger" />
               </a>{" "}
             </div>
           </div>

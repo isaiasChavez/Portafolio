@@ -14,7 +14,8 @@ interface ResumeCardProps {
   background: string;
   right?: boolean;
   hiddeButton?:boolean;
-  className?: string
+  className?: string;
+  triggerClass?:string
 }
 const ResumeCard: React.FC<ResumeCardProps> = ({
   title,
@@ -25,7 +26,8 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
   background,
   right,
   hiddeButton,
-  className
+  className,
+  triggerClass
 }) => {
   const context = useContext(GeneralContext);
 
@@ -58,7 +60,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
               <b >{date}</b>
               </p>
             <div className="mt-8">
-            {!hiddeButton && <button onClick={redirect} className="inmersys-trigger w-44 mb-8 bg-secondary hover:bg-secondaryLight duration-300  py-3 md:py-5 md:py-3  text-white uppercase font-semibold shadow">
+            {!hiddeButton && <button onClick={redirect} className={`${triggerClass} w-44 mb-8 bg-secondary hover:bg-secondaryLight duration-300  py-3 md:py-5  text-white uppercase font-semibold shadow`}>
                 Check projects
             </button>}
             </div>

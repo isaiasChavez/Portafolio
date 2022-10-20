@@ -151,12 +151,12 @@ const Card = ({
 }) => {
   return (
     <Fade>
-      <div className="h-full  w-full p-5 flex justify-center items-center">
+      <div className="h-full  w-full p-5 flex social-trigger justify-center items-center">
         <div className=" flex w-full h-full flex-col items-center justify-center">
           <div className="h-1/6 text-center mb-6">
             {" "}
             <FontAwesomeIcon
-              className="text-secondary mx-4 w-8 h-8  text-2xl "
+              className="text-secondary social-trigger mx-4 w-8 h-8  text-2xl "
               icon={icono}
             />{" "}
           </div>
