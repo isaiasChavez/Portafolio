@@ -8,9 +8,9 @@ const Skills = () => {
     <div className=' min-h-screen   bg-secondary py-10 text-shadow'>
        <div className='h-1/6 text-secondary  uppercase font-semibold flex flex-col justify-center items-center md:mb-10'>
           <h2 className='text-center text-2xl mb-8 md:mb-0'>Skills</h2>
-          <span className='flex items-center '>
+          <span className='flex items-center text-white '>
             ----
-            <FontAwesomeIcon className="w-8 h-8 text-secondary text-2xl mx-4"  icon={faCogs} />
+            <FontAwesomeIcon className="w-8 h-8 text-white text-secondary text-2xl mx-4"  icon={faCogs} />
             ----
           </span>
         </div>

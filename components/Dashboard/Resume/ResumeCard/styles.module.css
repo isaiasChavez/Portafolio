@@ -1,17 +1,19 @@
 .card {
-   
-    color: #eee;
-    min-height: fit-content;
-    margin-bottom: 1rem;
-    padding: 0 0.5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
+  color: #eee;
+  min-height: fit-content;
+  margin-top: 10rem;
+  padding: 0 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
 }
 
-
+.rcard {
+  min-width: 5rem;
+  padding: 1rem;
+}
 .innerCard {
   position: relative;
   width: 50%;
@@ -20,25 +22,34 @@
   border-bottom-left-radius: 16px;
 }
 
-
-@media (max-width: 1280px) { 
+@media (max-width: 1280px) {
   .innerCard {
     width: 80%;
   }
-  
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .innerCard {
     width: 100%;
   }
-  
+  .companyImage {
+    width: 100%;
+    height: 16rem !important;
+    object-fit: cover !important;
+  }
 }
 
-
-
-.companyImage{
-  height: 100%;
+.companyImage {
+  height: 20rem;
   width: 100%;
-  object-fit: cover;
+  filter: grayscale(1);
+  object-fit: contain;
+  transition: 0.6s;
+}
+
+.companyImage:hover{
+  filter: grayscale(0);
+}
+.companyImage:active {
+  filter: grayscale(0);
 }

@@ -1,3 +1,5 @@
+import Footer from "../../Dashboard/Footer";
+
 const Fade = require("react-reveal/Fade");
 
 interface LayoutProps {
@@ -23,7 +25,6 @@ const LayoutEmpty: React.FC<LayoutProps> = ({
   
   return (
     <div
-    
       className={`${className} ${background} ${` ${
         flex ? "flex" : ""
       } `} fixed overflow-y-scroll w-full h-full  `}

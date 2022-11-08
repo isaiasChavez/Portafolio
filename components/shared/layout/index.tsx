@@ -30,7 +30,6 @@ const Layout: React.FC<LayoutProps> = ({
     const percentage = Math.trunc((event.currentTarget.scrollTop * 100) / event.currentTarget.scrollHeight)
     context?.setScrollPercentage(percentage)
   };
-  console.log(context?.scrollPercentage)
   
   if (!context) {
       return null

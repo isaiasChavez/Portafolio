@@ -1,44 +1,36 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext } from "react";
-import GeneralContext from "../../../../state/general/general.context";
+import styles from "./styles.module.css";
 const Fade = require("react-reveal/Fade");
-const Roll = require("react-reveal/Roll");
 
 interface ServicesCardProps {
-  icono: IconProp;
-  title: string;
+  title: string | undefined;
   description: string | React.ReactNode;
-  index:number
+  index: number;
+  style?: React.CSSProperties;
+  tech:string[]
 }
 
 const ServicesCard: React.FC<ServicesCardProps> = ({
-  icono,
   title,
   description,
-  index
+  style,
+  tech
 }) => {
-  const context = useContext(GeneralContext);
-
   return (
-    <Roll left>
-      <div className="  w-full md:w-6/12 md:h-3/6 p-5 flex justify-center items-center text-shadow">
-        <div style={{
-        }}  className="relative flex w-full h-full flex-col items-center justify-center">
-          <div className="h-1/6 text-center mb-4 md:mb-8">
-            {" "}
-            <FontAwesomeIcon
-              className="w-8 h-8 text-shadow text-white text-2xl mx-4"
-              icon={icono}
-            />{" "}
-          </div>
-          <div className="h-5/6 flex flex-col items-center text-white">
-            <h4 className=" uppercase font-semibold text-2xl lg:text-3xl mb-5">{title}</h4>
-            <p className="text-md md:text-lg uppercase text-center">{description}</p>
+    <Fade>
+      <div  style={style} className={`${styles.main} flex-col md:flex-row py-32 md:py-0  px-8  relative`}>
+       
+        <div style={{ flex: 1 }} className={`${styles.container} text-white flex flex-col justify-center mb-10`}>
+          <h3 className="text-2xl md:text-4xl font-bold text-secondary uppercase">{title}</h3>
+          <p className="text-xs md:text-sm text-gray-light mt-4">{description} </p>
+          <div className={`${styles.lineDown} mt-4`}></div>
+        </div>
+        <div className={`${styles.right} text-graycust flex items-center justify-center`}>
+          <div className="flex">
+            {tech.map(tec => <p key={tec} className={` mx-2  uppercase text-xs md:text-sm`}>{tec}</p>)}
           </div>
         </div>
       </div>
-    </Roll>
+    </Fade>
   );
 };
 

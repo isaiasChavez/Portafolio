@@ -1,18 +1,26 @@
-.header{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    filter: opacity(0.9);
-    background-attachment: fixed;
-   }
+.header {
+  background-blend-mode: normal;
 
-   .title{
-       color:white;
-       text-shadow: 1.2px 1.2px 1.2px var(--black);
-   }
+  background: url("/assets/img/icalia/banner.jpg"),
+    linear-gradient(
+      0deg,
+      rgba(41, 41, 41, 1) 0%,
+      rgba(41, 41, 41, 0.8729866946778712) 30%,
+      rgba(41, 41, 41, 0.8141631652661064) 44%,
+      rgba(41, 41, 41, 0.5704656862745099) 74%,
+      rgba(41, 41, 41, 0) 100%
+    );
+  background-position: center;
+  background-blend-mode: hue;
+  filter: grayscale(1);
+}
 
-   .canvas{
-    width: 100%;
-    height: 100%;
+.title {
+  color: white;
+  text-shadow: 1.2px 1.2px 1.2px var(--black);
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
 }

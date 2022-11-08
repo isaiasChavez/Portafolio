@@ -23,7 +23,6 @@ const ImageViewer = React.forwardRef<any, ImageViewerProps>((props:ImageViewerPr
 
   useImperativeHandle(ref, () => ({
     open(currentImage:string) {
-       console.log({currentImage})
        const index:number =  images.findIndex(url=> url === currentImage)
        setCurrentIndex(index)
        setCurrentImage(images[index])

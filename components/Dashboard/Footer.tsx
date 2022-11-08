@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       
-      <div className="h-64 md:h-96 pt-16 md:pt-32 bg-darked-900">
+      <div className="h-64 md:h-96 pt-16 md:pt-32 bg-darked shadow-sm">
         <div className="w-10/12 md:w-4/12 text-white mx-auto  h-full flex flex-col justify-center items-center">
           <h3 className="text-3xl mb-2">
             <span className="text-secondary">N</span>orella
@@ -43,6 +43,13 @@ const Footer = () => {
               <a target="_blank" rel="noreferrer" href="#" className="social-trigger">
                 {" "}
                 <img src="/assets/icons/icons8-instagram.svg" className="social-trigger" />{" "}
+              </a>{" "}
+              </div>
+              <div className="w-8 h-8 mr-2 cursor-pointer ">
+              {" "}
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isaiaschavez/" className="social-trigger">
+                {" "}
+                <img src="/assets/icons/icons8-linkedin-30.svg" className="social-trigger" />{" "}
               </a>{" "}
             </div>
             <div className="w-8 h-8 mr-2 cursor-pointer ">

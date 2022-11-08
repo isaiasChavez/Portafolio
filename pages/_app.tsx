@@ -2,23 +2,28 @@
 import "../styles/globals.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-function App({ Component, pageProps }:{Component:any,pageProps:any}) {
-    const router = useRouter();
+import GeneralState from "../state/general/general.state";
 
-    useEffect(() => {
-        const handleRouteChange = (url:any) => {
-            window.gtag("config", process.env.GOOGLE_ANALYTICS, {
-                page_path: url,
-            });
-        };
-        router.events.on("routeChangeComplete", handleRouteChange);
-        return () => {
-            router.events.off("routeChangeComplete", handleRouteChange);
-        };
-    }, [router.events]);
+function App({ Component, pageProps }: { Component: any; pageProps: any }) {
+  const router = useRouter();
 
-    return <Component {...pageProps} />
+  useEffect(() => {
+    const handleRouteChange = (url: any) => {
+      window.gtag("config", process.env.GOOGLE_ANALYTICS, {
+        page_path: url,
+      });
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
+  return (
+    <GeneralState>
+      <Component {...pageProps} />
+    </GeneralState>
+  );
 }
 
 export default App;

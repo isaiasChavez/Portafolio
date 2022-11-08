@@ -1,16 +1,29 @@
 .container{
-    height: 200vh;     
-    padding: 20rem 0 30rem 0;
+        height: fit-content;
     border-bottom: 1rem solid var(--bg-secondary);
 }
+.innerContainer{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
 
-
-@media (max-width: 700px) {     
-    .container{
-        height: fit-content;     
-        padding: 20rem 0 30rem 0;
-    }
+.leftSide{
+flex:1;
+}
+.rigthSide{
+flex:1;
 }
 
 .innerContainer{
+}
+.image {
+    position: absolute;
+    transition: 1s;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    filter: grayscale(1) brightness(0.7) contrast(1.5);
+    opacity: 0.2;
 }
