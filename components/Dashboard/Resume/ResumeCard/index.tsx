@@ -54,7 +54,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
               alt=""
             />
           </div>
-          <div className="w-full md:w-7/12 h-full text-shadow  pl-6">
+          <div className="w-full md:w-7/12 h-full text-shadow  lg:pl-6">
             <h3 className="text-white font-bold text-2xl lg:text-3xl pt-10 mb-2">
               {title}
             </h3>
