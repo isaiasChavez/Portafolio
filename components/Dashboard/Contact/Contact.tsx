@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles.module.css";
@@ -9,20 +9,9 @@ import GeneralContext from "../../../state/general/general.context";
 interface ContactProps {}
 
 const Contact: React.FC<ContactProps> = () => {
-  const isShowFields = {
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  };
-  const [showFields, setShowFields] = useState(isShowFields);
+
   const context = useContext(GeneralContext);
-  const onFocus = (e: any) => {
-    setShowFields({
-      ...isShowFields,
-      [e.target.name]: "activeFieldContact",
-    });
-  };
+ 
   return (
     <div
       className={`text-shadow relative bg-darked-900 ${styles.main} flex flex-col justify-center`}
@@ -30,7 +19,7 @@ const Contact: React.FC<ContactProps> = () => {
       <div className=" flex flex-1 justify-center items-center flex-wrap md:flex-nowrap py-10">
         <Card
           icono={faMapMarkerAlt}
-          title={context?.language?.Ubicacion}
+          title={context?.language?.Ubicacion as string}
           subtitle="Oaxaca, México"
         />
         <Card
