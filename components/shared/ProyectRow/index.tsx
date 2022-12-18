@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { ProjectRowProps } from "../../../types/shared/ProjectRow";
 
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { useContext } from "react";
+import GeneralContext from "../../../state/general/general.context";
 const ProjectRow: React.FC<ProjectRowProps> = ({
   link,
   title,
@@ -10,7 +12,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({
   linkSite,
   codeLink,
   stack,
-  children
+  children,
 }) => {
   const router = useRouter();
 
@@ -19,6 +21,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({
       router.push(link);
     }
   };
+  const context = useContext(GeneralContext);
 
   return (
     <div className="w-full  rounded-sm shadow shadow-gray-strong  my-4 p-4 flex items-center">
@@ -31,19 +34,28 @@ const ProjectRow: React.FC<ProjectRowProps> = ({
         </h3>
         <div className="text-graycust mb-4">
           <p className=" font-normal md:font-thin pb-4">{subject}</p>
-          <h3 className="text-graycust font-bold">Tecnologías utilizadas</h3>
+          <h3 className="text-graycust font-bold">
+            {context?.language?.stack}
+          </h3>
           <p> {stack}</p>
         </div>
         <div className="flex flex-col text-sm">
-          {codeLink && <a className="text-brown-custom mb-2" href={codeLink}>
-            Código en github.{" "}
-            <FontAwesomeIcon
-              className="w-4 h-4 text-secondary text-2xl mx-4 "
-              icon={faLink}
-            />
-          </a>}
-          <a className="text-brown-custom" href={linkSite} target="_blank" rel="noreferrer">
-            Liga hacia el sitio de desarrollo.{" "}
+          {codeLink && (
+            <a className="text-brown-custom mb-2" href={codeLink}>
+              {context?.language?.gitcode}.{" "}
+              <FontAwesomeIcon
+                className="w-4 h-4 text-secondary text-2xl mx-4 "
+                icon={faLink}
+              />
+            </a>
+          )}
+          <a
+            className="text-brown-custom"
+            href={linkSite}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {context?.language?.linktosite}
             <FontAwesomeIcon
               className="w-4 h-4 text-secondary text-2xl mx-4 "
               icon={faLink}
