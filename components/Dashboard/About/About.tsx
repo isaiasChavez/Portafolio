@@ -47,7 +47,9 @@ export default function About() {
                 </a>
               </button>
               <button className="w-56 text-secondary uppercase font-semibold">
-                <a href="#contact">{context?.language?.contratame}</a>
+                <a href="mailto:isaiaschavez.co@gmail.com">
+                  {context?.language?.contratame}
+                </a>
               </button>
             </Slide>
           </div>

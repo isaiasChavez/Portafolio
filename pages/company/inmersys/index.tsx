@@ -16,13 +16,8 @@ interface CompanyProps {}
 
 const Icalia: React.FC<CompanyProps> = () => {
   const component = useRef<ImageViewerRef>();
-  console.log({ component });
 
-  const images = [
-    "/assets/img/icalia/equipo2.png",
-    "/assets/img/icalia/teammexico.jpeg",
-    "/assets/img/icalia/teamusa.jpeg",
-  ];
+  const images = ["/assets/img/inmer/inmer.jpeg"];
 
   const context = useContext(GeneralContext);
 

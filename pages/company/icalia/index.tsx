@@ -97,7 +97,7 @@ const Icalia: React.FC<CompanyProps> = () => {
                 link={routes.companies.icalia.projects.rockefeller}
               />
               <ProjectRow
-                stack=""
+                stack="React Native"
                 linkSite=""
                 title="OyeApp"
                 subject={

@@ -15,7 +15,6 @@ const GeneralState = ({ children }: { children: React.ReactNode }) => {
   };
   useEffect(() => {
     const lan = localStorage.getItem("ISALAN");
-    console.log({ lan });
     if (lan === Langs.ES) {
       getSpanish();
     } else {
