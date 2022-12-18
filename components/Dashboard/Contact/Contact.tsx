@@ -9,9 +9,8 @@ import GeneralContext from "../../../state/general/general.context";
 interface ContactProps {}
 
 const Contact: React.FC<ContactProps> = () => {
-
   const context = useContext(GeneralContext);
- 
+
   return (
     <div
       className={`text-shadow relative bg-darked-900 ${styles.main} flex flex-col justify-center`}
@@ -34,10 +33,11 @@ const Contact: React.FC<ContactProps> = () => {
       </div>
       <div className="flex-1 flex justify-center items-center">
         {
-          <a href="mailto:isaiaschavez.co@gmail.com"
+          <a
+            href="mailto:isaiaschavez.co@gmail.com"
             className={` ${styles.rcard} bg-secondary text-lg lg:text-2xl hover:bg-secondary-200 duration-300  py-3 px-8 md:py-5  text-white uppercase font-semibold shadow`}
           >
-            SEND ME A MESSAGE
+            {context?.language?.sendme}
           </a>
         }
       </div>

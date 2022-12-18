@@ -6,7 +6,8 @@ export type Espa = {
     contratame:string,
     hello: string,
     hellorn:string,
-    hellowith:string,
+    hellowith: string,
+    sendme: string
     hellofr:string,
     and:string,
     helloback:string,

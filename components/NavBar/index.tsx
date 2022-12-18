@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import GeneralContext from "../../state/general/general.context";
+import { Langs } from "../../state/general/types";
 import Toggle from "../shared/ToggleButtton";
 import styles from "./styles.module.css";
 
@@ -17,12 +18,13 @@ const NavBar: React.FC<NavBarProps> = () => {
       context?.getSpanish();
     }
   };
-  console.log({ context });
-
-  console.log("context?.scrollPercentage:", context?.scrollPercentage);
   const [hover, setHover] = useState(false);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (context?.lan === Langs.ES) {
+      setEnabled(true);
+    }
+  }, [context?.lan]);
 
   return (
     <div

@@ -1,8 +1,10 @@
 import { Espa } from "../../types/shared/Lang";
+import { Langs } from "./types";
 
 export type GeneralStateType = {
   scrollPercentage: number;
   loading: boolean;
+  lan: Langs;
   language: Espa | null;
 };
 
@@ -21,9 +23,11 @@ const generalReducer = (
         scrollPercentage: payload,
       };
     case "SET_LANG":
+      localStorage.setItem("ISALAN", payload.lan)
       return {
         ...state,
-        language: payload,
+        language: payload.data,
+        lan: payload.lan
       };
     default:
       return state;
