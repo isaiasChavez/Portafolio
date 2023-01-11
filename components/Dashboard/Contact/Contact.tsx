@@ -19,7 +19,7 @@ const Contact: React.FC<ContactProps> = () => {
         <Card
           icono={faMapMarkerAlt}
           title={context?.language?.Ubicacion as string}
-          subtitle="Oaxaca, México"
+          subtitle="México"
         />
         <Card
           icono={faMailBulk}

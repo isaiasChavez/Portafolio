@@ -26,12 +26,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({
   return (
     <div className="w-full  rounded-sm shadow shadow-gray-strong  my-4 p-4 flex items-center">
       <div>
-        <h3
-          onClick={redirect}
-          className="py-1 cursor-pointer text-secondary font-semibold text-xl"
-        >
-          {title}
-        </h3>
+        <h3 className="py-1  text-secondary font-semibold text-xl">{title}</h3>
         <div className="text-graycust mb-4">
           <p className=" font-normal md:font-thin pb-4">{subject}</p>
           <h3 className="text-graycust font-bold">
