@@ -16,7 +16,7 @@ export default function About() {
           <img
             alt="Isaías Chávez"
             className={styles.profilePicture}
-            src="/assets/img/yo_i.jpg"
+            src="/assets/img/yo_i.jpeg"
           />
         </div>
         <div className="  flex-1  md:mt-0 w-full md:w-7/12   ">
